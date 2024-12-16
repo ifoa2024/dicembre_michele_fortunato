@@ -2,4 +2,5 @@
 -dichiarativo
 -jsx: javascript xml
 -componenti
+-virtual DOM
 -
