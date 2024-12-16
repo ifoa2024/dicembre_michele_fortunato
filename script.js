@@ -13,13 +13,32 @@ console.log(persona)
 
 
 export function sum(n1, n2) {
-    sum = n1+n2;
-    return sum;
+  return n1+n2;
 }
 
-console.log(sum());
+console.log(sum(...[1,2]));
+const array = [1,2,3];
+const obj  ={...array}
+console.log(obj);
 
+const array1 = [5,4,3];
+const array2 = [34,5623,523];
 
+const newArray = [...array1, ...array2];
+console.log(newArray);
+
+const userState = {
+    name: 'mirko',
+};
+
+const newuserState  ={
+    ...userState, 
+    age: 30,
+    email: 'mirkki@gmmail.comn',
+    isOnline: true,
+}
+
+console.log(newuserState);
 
 let options = {
     size: {
@@ -36,7 +55,6 @@ alert(width);
 
 function printNameAge() {
     console.log(`${nome}, anni ${età}`);
-    
 }
 
 console.log(printNameAge())
